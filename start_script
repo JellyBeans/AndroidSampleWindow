@@ -1,0 +1,5 @@
+# shell.
+# push file to /system/bin/ and chmod 777 and execute with /system/bin/samplewindow
+base=/system
+export CLASSPATH=$base/framework/samplewindow.jar
+exec app_process $base/bin com.android.commands.samplewindow.SampleWindow "$@"
